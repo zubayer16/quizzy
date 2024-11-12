@@ -11,24 +11,35 @@
       margin: 0 auto;
       padding: 20px;
       line-height: 1.6;
+      color: #333;
     }
     header, section, footer {
       margin-bottom: 20px;
     }
-    h1, h2, h3 {
+    h1, h2 {
       color: #333;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      align-items: start;
     }
     .team-member {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      margin-bottom: 10px;
+      text-align: center;
     }
     .team-member img {
       border-radius: 50%;
-      width: 80px;
-      height: 80px;
+      width: 100px;
+      height: 100px;
       object-fit: cover;
-      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .team-member p {
+      margin: 0;
     }
     .links a {
       color: #007acc;
@@ -68,63 +79,24 @@
     </ul>
   </section>
 
-  <!-- Similar Existing Software -->
-  <section id="existing-software">
-    <h2>Existing Quiz Software Applications</h2>
-    <div>
-      <h3>Kahoot!</h3>
-      <p>A game-based learning platform used in schools. Known for its competitive elements, Kahoot! allows users to create quizzes in real time.</p>
-    </div>
-    <div>
-      <h3>Quizlet</h3>
-      <p>A study tool focused on flashcards. Quizlet offers multiple-choice tests and interactive games, enhancing learning through repetition.</p>
-    </div>
-    <div>
-      <h3>Google Forms</h3>
-      <p>A simple tool for creating quizzes and surveys. It offers basic question creation, automatic grading, and data collection.</p>
-    </div>
-    <div>
-      <h3>ProProfs Quiz Maker</h3>
-      <p>A versatile tool for creating high-stakes exams and quizzes, featuring templates, randomization, and reporting options.</p>
-    </div>
-  </section>
-
-  <!-- Platform Information -->
-  <section id="platform">
-    <h2>Platform(s)</h2>
-    <p>The quiz app will be web-based, accessible via any modern web browser. This approach ensures a seamless experience on desktops, tablets, and mobile devices without additional downloads or installations.</p>
-  </section>
-
-  <!-- Programming Languages and Technologies -->
-  <section id="technologies">
-    <h2>Programming Languages and Technologies</h2>
-    <p>[List the programming languages, frameworks, and tools to be used in the development of this project.]</p>
-  </section>
-
-  <!-- Development and Project Management Approach -->
-  <section id="approach">
-    <h2>Development and Project Management Approach</h2>
-    <p>Our team will use the Scrum methodology to manage the project with iterative one-week sprints, enabling quick adaptation to feedback.</p>
-    <ul>
-      <li><strong>Weekly Planning Meeting:</strong> Set tasks, prioritize goals, and assign roles at the start of each sprint.</li>
-      <li><strong>Pre-Deadline Review:</strong> Ensure progress and address issues before the sprint ends.</li>
-    </ul>
-  </section>
-
-  <!-- Team Members -->
+  <!-- Team Members with Pictures -->
   <section id="team">
     <h2>Meet the Team</h2>
-    <div class="team-member">
-      <img src="path/to/photo1.jpg" alt="Team Member 1">
-      <p><strong>Team Member 1</strong> - Project Manager</p>
-      <p>Background: [Short bio about the team member’s experience and role]</p>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="path/to/photo1.jpg" alt="Team Member 1">
+        <p><strong>Team Member 1</strong></p>
+        <p>Role: Project Manager</p>
+        <p>Background: [Brief bio or skills]</p>
+      </div>
+      <div class="team-member">
+        <img src="path/to/photo2.jpg" alt="Team Member 2">
+        <p><strong>Team Member 2</strong></p>
+        <p>Role: Developer</p>
+        <p>Background: [Brief bio or skills]</p>
+      </div>
+      <!-- Add more team members as needed -->
     </div>
-    <div class="team-member">
-      <img src="path/to/photo2.jpg" alt="Team Member 2">
-      <p><strong>Team Member 2</strong> - Developer</p>
-      <p>Background: [Short bio about the team member’s experience and role]</p>
-    </div>
-    <!-- Add more team members as needed -->
   </section>
 
   <!-- Links to Repositories and Resources -->
